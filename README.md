@@ -1,346 +1,250 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=azqzazq1&fontSize=80&fontAlignY=38&animation=twinkling&fontColor=fff&desc=Security%20Researcher%20%7C%20Red%20Team%20Engineer%20%7C%20Vuln%20Analyst&descAlignY=60&descSize=16" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0B0B,35:5A0000,65:B00000,100:FF0000&height=260&section=header&text=azqzazq1&fontSize=84&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Security%20Researcher%20%7C%20Red%20Team%20Engineer%20%7C%20CVE%20Analyst&descSize=18&descAlignY=58" />
 
 <br/>
 
-<img src="https://img.shields.io/badge/CVE_Author_Assigned-E74C3C?style=for-the-badge&logo=hackthebox&logoColor=white&labelColor=1a1a1a" />
-<img src="https://img.shields.io/badge/Red_Team-Active-C0392B?style=for-the-badge&logo=kalilinux&logoColor=white&labelColor=1a1a1a" />
-<img src="https://img.shields.io/badge/Kernel_Research-Linux_%2F_Windows-922B21?style=for-the-badge&logo=linux&logoColor=white&labelColor=1a1a1a" />
-<img src="https://img.shields.io/badge/Blog-mileniumsec.com-7B241C?style=for-the-badge&logo=ghost&logoColor=white&labelColor=1a1a1a" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=FF3131&center=true&vCenter=true&width=900&lines=I+research+how+systems+break.;Kernel+Security+%7C+Privilege+Escalation+%7C+Red+Team+Operations;Exploit+Path+Analysis+%7C+CVE+Research+%7C+Reverse+Engineering;Observation+is+not+always+reality." />
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" />
+<img src="https://img.shields.io/badge/RED_TEAM-OPERATIONS-FF0000?style=for-the-badge&labelColor=111111" />
+<img src="https://img.shields.io/badge/CVE-RESEARCH-B00000?style=for-the-badge&labelColor=111111" />
+<img src="https://img.shields.io/badge/KERNEL-SECURITY-8B0000?style=for-the-badge&labelColor=111111" />
+<img src="https://img.shields.io/badge/LINUX-PRIVESC-C0392B?style=for-the-badge&logo=linux&logoColor=white&labelColor=111111" />
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=azqzazq1&color=red&style=for-the-badge" />
 
 </div>
-
-<br/>
-
-## `whoami`
-
-```yaml
-handle      :  azqzazq1
-roles       :  Security Researcher
-               Red Team Engineer
-               Vulnerability Analyst
-               System-Level Security Specialist
-
-scope       :  operating systems · cloud infrastructure · application security
-method      :  vulnerability research · exploit path analysis · coordinated disclosure
-philosophy  :  systems are layered trust models
-               find where assumptions break — and why
-```
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" />
-</div>
-
-<br/>
-
-## `core specializations`
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%" align="center">
-
-### OFFENSIVE
-
-```diff
-+ Privilege Escalation Research
-  Linux / Windows Kernel & Userland
-
-+ Red Team Operations
-  Attack Simulation & Adversary Emulation
-
-+ Exploit Path Analysis
-  Root Cause Engineering & PoC Development
-
-+ Offensive Tooling
-  Custom Security Research Frameworks
-```
-
-</td>
-<td width="50%" align="center">
-
-### RESEARCH
-
-```diff
-! Vulnerability Research
-  Coordinated Disclosure at Scale
-
-! Cloud Security
-  AWS / IAM / Container Environments
-
-! Kernel-Level Analysis
-  Privilege Boundary Deep Dives
-
-! Reverse Engineering
-  Binary Analysis & Exploitation Surface
-```
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" />
-</div>
-
-<br/>
-
-## `cat ./research/cve_log`
-
-<br/>
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/CVE--2026--7867-udisks2_PrivEsc-E74C3C?style=for-the-badge&logo=hackthebox&logoColor=white&labelColor=1a1a1a" />
-<img src="https://img.shields.io/badge/Status-DISCLOSED-27AE60?style=for-the-badge&labelColor=1a1a1a" />
-
-</div>
-
-<br/>
-
-> **Privileged escalation vulnerability** in udisks2 `as-user` authorization flow.  
-> Full responsible disclosure with vendor coordination and official CVE assignment.
-
-```diff
-+ Vulnerability Class   :  Privilege Escalation (Local)
-+ Component             :  udisks2 — as-user authorization flow
-+ Disclosure Type       :  Coordinated / Responsible
-+ CVE Status            :  ASSIGNED
-- Technical Write-up    :  [PENDING PUBLICATION]
-```
-
-<br/>
 
 ---
 
-<div align="center">
+# `whoami`
 
-<img src="https://img.shields.io/badge/CVE--2025--14500-IceWarp_Analysis-E74C3C?style=for-the-badge&logo=hackthebox&logoColor=white&labelColor=1a1a1a" />
-<img src="https://img.shields.io/badge/Status-PUBLISHED-27AE60?style=for-the-badge&labelColor=1a1a1a" />
+```yaml
+handle: azqzazq1
 
-</div>
+roles:
+  - Security Researcher
+  - Red Team Engineer
+  - Vulnerability Analyst
+  - System-Level Security Specialist
 
-<br/>
+focus:
+  - Linux / Windows privilege boundaries
+  - Offensive security research
+  - Cloud & container attack surfaces
+  - Root cause analysis & exploit path engineering
+  - Coordinated disclosure & CVE research
 
-> **Deep technical analysis + reverse engineering** of IceWarp vulnerability behavior  
-> and full exploitation surface characterization.
+philosophy:
+  - systems are layered trust models
+  - assumptions fail before software does
+  - observation is not always reality
+````
+
+---
+
+# `./featured_research`
+
+## 🧨 CVE-2026-7867 — Coordinated Vulnerability Research
+
+Research conducted on a Linux system component involving authorization logic and privilege boundary handling.
+
+The issue was identified during advanced Red Team and system-level security research and responsibly disclosed to the vendor.
 
 ```diff
-+ Vulnerability Class   :  Root Cause Analysis
-+ Method                :  Reverse Engineering · Exploitation Surface Mapping
-+ Output                :  Full Technical Blog Post
++ Research Area   : Linux Authorization Logic
++ Scope           : Privilege Boundary Analysis
++ Disclosure      : Coordinated with Vendor
++ CVE Status      : Assigned
+- Technical Data  : Temporarily Withheld
+```
+
+> Full technical analysis and root cause breakdown will be published after coordinated disclosure timelines are completed.
+
+---
+
+## 🧊 IceWarp CVE-2025-14500 — Root Cause & Reverse Engineering
+
+World-first technical analysis of IceWarp CVE-2025-14500, including root cause review and exploitation surface mapping.
+
+```diff
++ Research Type   : Reverse Engineering
++ Focus           : Exploitation Surface Mapping
++ Output          : Public Technical Analysis
++ Status          : Published
 ```
 
 <div align="center">
 
 <a href="https://mileniumsec.com/blog/icewarp-cve-2025-14500-root-cause-reverse-engineering">
-<img src="https://img.shields.io/badge/→_Read_Full_Analysis-mileniumsec.com-C0392B?style=for-the-badge&labelColor=1a1a1a" />
+<img src="https://img.shields.io/badge/READ_ANALYSIS-MileniumSec-FF0000?style=for-the-badge&labelColor=111111" />
 </a>
 
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" />
-</div>
-
-<br/>
-
-## `ls ./contributions/`
-
-<br/>
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/MCP36-First_Public_PoC-922B21?style=for-the-badge&labelColor=1a1a1a" />
-<img src="https://img.shields.io/badge/Type-Proof_of_Concept-E74C3C?style=for-the-badge&labelColor=1a1a1a" />
-
-</div>
-
-<br/>
-
-> First public PoC research and attack surface validation for MCP36.  
-> Full exploitation chain documented and published.
-
-```bash
-# Repository
-github.com/azqzazq1/mcp36-poc
-```
-
-<div align="center">
-<a href="https://github.com/azqzazq1/mcp36-poc">
-<img src="https://img.shields.io/badge/→_View_Repository-github-C0392B?style=for-the-badge&logo=github&labelColor=1a1a1a" />
-</a>
 </div>
 
 ---
 
-<div align="center">
+# `./red_team_research`
 
-<img src="https://img.shields.io/badge/Judozi-Kernel_PrivEsc_Framework-922B21?style=for-the-badge&labelColor=1a1a1a" />
-<img src="https://img.shields.io/badge/Type-Offensive_Tooling-E74C3C?style=for-the-badge&labelColor=1a1a1a" />
+## 🔴 eBPF Telemetry Redaction — Kernel-Level Red Team Technique
 
-</div>
+A Red Team research technique focused on changing what defensive systems believe they observed.
 
-<br/>
-
-> Custom kernel-level privilege escalation research tooling and security testing framework.  
-> Modular architecture — plug-in support for new exploit modules.
+Instead of disabling telemetry or terminating agents, this research explores runtime syscall observation and controlled data transformation using eBPF.
 
 ```diff
-+ Kernel Range     :  2.6.22 → 6.7.1
-+ Architecture     :  Modular Plugin System
-+ Binary Mode      :  GCC-Free / Precompiled Fallback
-+ Exploit Count    :  19+ CVEs
++ Technique   : eBPF Telemetry Redaction
++ Layer       : Syscall Observation Layer
++ Surface     : Security Telemetry Streams
++ Model       : Runtime Data Transformation
++ Principle   : Observation ≠ Reality
 ```
 
 <div align="center">
-<a href="https://github.com/azqzazq1/judozi">
-<img src="https://img.shields.io/badge/→_View_Project-github-C0392B?style=for-the-badge&logo=github&labelColor=1a1a1a" />
+
+<a href="https://www.youtube.com/watch?v=5CiSSglRJeo&t=4s">
+<img src="https://img.shields.io/badge/WATCH_RESEARCH_DEMO-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=111111" />
 </a>
+
 </div>
 
 ---
 
+```text
+NORMAL TELEMETRY FLOW
+
+process → syscall → agent → SIEM → analyst
+
+
+RESEARCHED ATTACK MODEL
+
+process → syscall → eBPF layer → agent → SIEM
+                          └─ selective transformation
+```
+
+> Security systems do not directly observe reality.
+> They observe interpreted runtime data streams.
+
+---
+
+# `./projects`
+
+## ⚙️ MCP36 PoC
+
+First public PoC research and attack surface validation for MCP36.
+
+```diff
++ Type     : Proof of Concept
++ Focus    : Attack Surface Research
++ Status   : Published
+```
+
 <div align="center">
 
-<img src="https://img.shields.io/badge/Red_Team_Research-Novel_Offensive_Technique-922B21?style=for-the-badge&labelColor=1a1a1a" />
-<img src="https://img.shields.io/badge/Type-Red_Team_Ops-E74C3C?style=for-the-badge&labelColor=1a1a1a" />
-
-</div>
-
-<br/>
-
-> New offensive security technique developed during Red Team operations.  
-> Validated in controlled environments and presented publicly.
-
-<div align="center">
-<a href="https://www.youtube.com/watch?v=5CiSSglRJeo&t=4s">
-<img src="https://img.shields.io/badge/→_Watch_Presentation-youtube-C0392B?style=for-the-badge&logo=youtube&labelColor=1a1a1a" />
+<a href="https://github.com/azqzazq1/mcp36-poc">
+<img src="https://img.shields.io/badge/VIEW_REPOSITORY-GitHub-FF0000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" />
 </a>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" />
-</div>
-
-<br/>
-
-## `watch --live ./current_research`
-
-<br/>
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="25%">
-
-<img src="https://img.shields.io/badge/Linux_Internals-Kernel_Security-E74C3C?style=for-the-badge&labelColor=1a1a1a" />
-
-privilege boundaries  
-syscall attack surface  
-kernel exploit R&D
-
-</td>
-<td align="center" width="25%">
-
-<img src="https://img.shields.io/badge/Cloud_IAM-Access_Control-C0392B?style=for-the-badge&labelColor=1a1a1a" />
-
-AWS misconfigurations  
-IAM privilege chains  
-identity abuse patterns
-
-</td>
-<td align="center" width="25%">
-
-<img src="https://img.shields.io/badge/Container_Security-Escape_Models-922B21?style=for-the-badge&labelColor=1a1a1a" />
-
-isolation failures  
-Docker / cgroup escapes  
-namespace boundary breaks
-
-</td>
-<td align="center" width="25%">
-
-<img src="https://img.shields.io/badge/Red_Team-Simulation_Frameworks-7B241C?style=for-the-badge&labelColor=1a1a1a" />
-
-adversary emulation  
-custom C2 tooling  
-attack chain automation
-
-</td>
-</tr>
-</table>
 
 </div>
 
-<br/>
+---
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" />
-</div>
+## 🐉 Judozi
 
-<br/>
+Kernel-level privilege escalation research tooling and Linux exploit framework.
 
-## `./stats --fetch azqzazq1`
-
-<br/>
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=azqzazq1&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=E74C3C&icon_color=C0392B&text_color=8b949e&ring_color=E74C3C&include_all_commits=true&count_private=true" />
-&nbsp;&nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=azqzazq1&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=E74C3C&text_color=8b949e&langs_count=6" />
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com?user=azqzazq1&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=21262d&ring=E74C3C&fire=C0392B&currStreakLabel=f0f6fc&sideLabels=8b949e&dates=8b949e" />
-
-</div>
-
-<div align="center">
-
-![snake](https://github.com/platane/snk/raw/output/github-contribution-grid-snake-dark.svg)
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" />
-</div>
-
-<br/>
-
-## `grep contact /etc/`
-
-```
-github   →  https://github.com/azqzazq1
-blog     →  https://mileniumsec.com
+```diff
++ Type     : Offensive Tooling
++ Focus    : Kernel PrivEsc Research
++ Mode     : Modular Framework
 ```
 
-<br/>
+<div align="center">
+
+<a href="https://github.com/azqzazq1/judozi">
+<img src="https://img.shields.io/badge/VIEW_PROJECT-GitHub-B00000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" />
+</a>
+
+</div>
+
+---
+
+# `./arsenal`
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=160&section=footer&text=%22Security+is+not+about+preventing+access%22&fontSize=18&fontColor=ffffff&animation=twinkling&desc=it+is+about+controlling+assumptions&descSize=14&descAlignY=72" />
+<img src="https://img.shields.io/badge/C-8B0000?style=for-the-badge&logo=c&logoColor=white&labelColor=111111" />
+<img src="https://img.shields.io/badge/C++-B00000?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=111111" />
+<img src="https://img.shields.io/badge/Python-FF0000?style=for-the-badge&logo=python&logoColor=white&labelColor=111111" />
+<img src="https://img.shields.io/badge/Go-7B0000?style=for-the-badge&logo=go&logoColor=white&labelColor=111111" />
+<img src="https://img.shields.io/badge/Bash-111111?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=8B0000" />
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Linux-Kernel_Security-FF0000?style=for-the-badge&logo=linux&logoColor=white&labelColor=111111" />
+<img src="https://img.shields.io/badge/AWS-Cloud_Security-B00000?style=for-the-badge&logo=amazonaws&logoColor=white&labelColor=111111" />
+<img src="https://img.shields.io/badge/Docker-Container_Security-8B0000?style=for-the-badge&logo=docker&logoColor=white&labelColor=111111" />
+<img src="https://img.shields.io/badge/Kubernetes-Cluster_Security-C0392B?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=111111" />
 
 </div>
+
+---
+
+
+# `./stats`
+
+<div align="center">
+
+<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=azqzazq1&theme=github_dark" />
+
+<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=azqzazq1&theme=github_dark" />
+
+<br/><br/>
+
+<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=azqzazq1&theme=github_dark" />
+
+<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=azqzazq1&theme=github_dark&utcOffset=3" />
+
+<br/><br/>
+
+<img width="97%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=azqzazq1&theme=github_dark" />
+
+</div>
+
+
+
+
+
+---
+
+# `./mission`
+
+```text
+Research offensive security from the system boundary.
+
+Not only how to exploit a bug,
+but why the design allowed the bug to become exploitable.
+
+Not only how telemetry is collected,
+but why defenders trust what they observe.
+```
+
+---
+
+# `contact`
+
+```yaml
+github: https://github.com/azqzazq1
+blog:   https://mileniumsec.com
+```
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0B0B,35:5A0000,65:B00000,100:FF0000&height=170&section=footer&text=RED%20TEAM%20RESEARCH%20LAB&fontSize=26&fontColor=ffffff&animation=fadeIn" />
+
+</div>
+
