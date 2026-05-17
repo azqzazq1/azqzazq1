@@ -131,8 +131,7 @@ process → syscall → eBPF layer → agent → SIEM
 
 ---
 
-## 🔓 LID — Linux Integrity Drift
-
+## 🔴 LID(Linux Integrity Drift)
 A Red Team research technique that bypasses AppArmor mandatory access control using eBPF — without disabling it, without modifying it, and without leaving a single audit log entry.
 
 LID attaches a BPF kprobe to the kernel's file-open path and rewrites the filename in user memory before the LSM framework checks it. AppArmor enforces the wrong path. The process reads the protected file.
