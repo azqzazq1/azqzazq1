@@ -131,6 +131,49 @@ process → syscall → eBPF layer → agent → SIEM
 
 ---
 
+## 🔓 LID — Linux Integrity Drift
+
+A Red Team research technique that bypasses AppArmor mandatory access control using eBPF — without disabling it, without modifying it, and without leaving a single audit log entry.
+
+LID attaches a BPF kprobe to the kernel's file-open path and rewrites the filename in user memory before the LSM framework checks it. AppArmor enforces the wrong path. The process reads the protected file.
+
+```diff
++ Technique   : eBPF Pre-LSM Pathname Rewriting
++ Layer       : Syscall Argument Manipulation
++ Surface     : LSM Security Decision Input
++ Target      : AppArmor (pathname-based MAC)
++ Audit Trail : Zero — denial never occurs
++ Principle   : The gate was never breached. It was misdirected.
+```
+
+<div align="center">
+
+<a href="https://github.com/azqzazq1/LID">
+<img src="https://img.shields.io/badge/VIEW_RESEARCH-GitHub-FF0000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" />
+</a>
+
+</div>
+
+---
+
+```text
+LID + SUNNYDAYBPF — COMBINED ATTACK MODEL
+
+             ┌─── LID rewrites path ───┐
+             │                          │
+process → syscall → LSM check → VFS → success
+                                  │
+             ┌── SunnyDayBPF ─────┘
+             │
+        agent → SIEM → analyst sees nothing
+```
+
+> LID bypasses the security gate.
+> SunnyDayBPF blinds the cameras.
+> Combined: ghost access.
+
+---
+
 # `./projects`
 
 ## ⚙️ MCP36 PoC
