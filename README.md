@@ -219,6 +219,8 @@ Kernel-level privilege escalation research tooling and Linux exploit framework.
 
 ## 🔐 LXPEN — Hierarchical Probabilistic Decomposition (HPD)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20366383.svg)](https://doi.org/10.5281/zenodo.20366383)
+
 A novel NTLM hash cracking algorithm that models human password creation as a structured probabilistic process. No wordlists, no OSINT, no GPU — pure algorithmic pattern decomposition.
 
 ```diff
