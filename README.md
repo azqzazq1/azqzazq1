@@ -215,6 +215,58 @@ Kernel-level privilege escalation research tooling and Linux exploit framework.
 
 ---
 
+# `./tools_and_algorithms`
+
+## 🔐 LXPEN — Hierarchical Probabilistic Decomposition (HPD)
+
+A novel NTLM hash cracking algorithm that models human password creation as a structured probabilistic process. No wordlists, no OSINT, no GPU — pure algorithmic pattern decomposition.
+
+```diff
++ Algorithm    : HPD (Hierarchical Probabilistic Decomposition)
++ Approach     : Structure → Components → Variations
++ Hash Type    : NTLM (MD4 of UTF-16LE)
++ Core Engine  : C (-O3 -march=native -pthread)
++ Orchestrator : Crystal (FFI bindings)
++ Principle    : Don't crack the password. Crack the idea.
+```
+
+```text
+BENCHMARK: LXPEN v0.4 vs Hashcat v6.2.6  (CPU-only, 20 NTLM hashes)
+
+                    LXPEN           Hashcat (100K+best64)
+  Cracked:          18/20 (90%)     13/20 (65%)
+  Time:             0.56s           3.95s
+  RAM:              4.4 MB          475 MB
+  Speedup:          7x faster       baseline
+  RAM efficiency:   108x less       baseline
+  Wordlist:         NONE            100K file required
+```
+
+```text
+HPD decomposes passwords into behavioral layers:
+
+  Pattern:    [CapName] + [Year] + [Symbol]
+  Slots:      "Michael"   "1994"    "!"
+  Candidate:  "Michael1994!"
+
+  45 patterns × 900+ slot entries = 4.3M candidates
+  Covers ~90% of human-chosen pattern-based passwords
+```
+
+<div align="center">
+
+<a href="https://github.com/azqzazq1/lxpen">
+<img src="https://img.shields.io/badge/VIEW_TOOL-GitHub-FF0000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" />
+</a>
+
+<a href="https://github.com/azqzazq1/lxpen/blob/main/docs/HPD-ALGORITHM.md">
+<img src="https://img.shields.io/badge/HPD_ALGORITHM-Documentation-B00000?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=111111" />
+</a>
+
+</div>
+
+---
+
 # `./arsenal`
 
 <div align="center">
@@ -223,6 +275,7 @@ Kernel-level privilege escalation research tooling and Linux exploit framework.
 <img src="https://img.shields.io/badge/C++-B00000?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=111111" />
 <img src="https://img.shields.io/badge/Python-FF0000?style=for-the-badge&logo=python&logoColor=white&labelColor=111111" />
 <img src="https://img.shields.io/badge/Go-7B0000?style=for-the-badge&logo=go&logoColor=white&labelColor=111111" />
+<img src="https://img.shields.io/badge/Crystal-8B0000?style=for-the-badge&logo=crystal&logoColor=white&labelColor=111111" />
 <img src="https://img.shields.io/badge/Bash-111111?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=8B0000" />
 
 <br/><br/>
