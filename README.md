@@ -156,20 +156,64 @@ LID attaches a BPF kprobe to the kernel's file-open path and rewrites the filena
 ---
 
 ```text
-LID + SUNNYDAYBPF — COMBINED ATTACK MODEL
+LID + SUNNYDAYBPF + SUNNYMAPBPF — COMBINED ATTACK MODEL
 
              ┌─── LID rewrites path ───┐
              │                          │
 process → syscall → LSM check → VFS → success
                                   │
-             ┌── SunnyDayBPF ─────┘
-             │
-        agent → SIEM → analyst sees nothing
+             ┌── SunnyDayBPF ─────┘        ┌── SunnyMapBPF
+             │                              │
+        agent → SIEM → analyst sees nothing │  agent.maps = 0
+                                            │  telemetry = dead
+                                            └→ agent reports healthy
 ```
 
 > LID bypasses the security gate.
-> SunnyDayBPF blinds the cameras.
-> Combined: ghost access.
+> SunnyDayBPF rewrites what the cameras record.
+> SunnyMapBPF kills the cameras entirely.
+> Combined: ghost access, zero telemetry.
+
+---
+
+## 🔴 SunnyMapBPF — BPF Map State Poisoning
+
+A research artifact demonstrating that eBPF-based security monitors (Falco, Tracee, Tetragon) do not protect their own runtime BPF map state against same-privilege tampering.
+
+Instead of killing the agent or modifying config files, this technique writes directly to the kernel-resident BPF maps that control event generation — suppressing all telemetry silently.
+
+```diff
++ Technique   : BPF Map State Poisoning
++ Layer       : Kernel BPF Subsystem (bpf() syscall)
++ Surface     : Security Tool Runtime State
++ Targets     : Falco, Tracee, Tetragon
++ Result      : 100% telemetry suppression, zero logs, zero crashes
++ Principle   : The monitor is running. It just can't see.
+```
+
+<div align="center">
+
+<a href="https://github.com/azqzazq1/SunnyMapBPF">
+<img src="https://img.shields.io/badge/VIEW_RESEARCH-GitHub-FF0000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" />
+</a>
+
+</div>
+
+---
+
+```text
+SUNNYMAPBPF — CROSS-TOOL TELEMETRY SUPPRESSION
+
+  TRACEE:     config_map.enabled_policies = 0     → all events dropped
+  TETRAGON:   execve_calls prog_array emptied      → tail calls fail silently
+  FALCO:      interesting_syscalls[*] = 0          → every syscall skipped
+
+  Common trait: no tool uses bpf_map_freeze() or runtime integrity checks.
+  The monitor stays alive. The telemetry dies.
+```
+
+> The tools watch the kernel.
+> Nothing watches the tools.
 
 ---
 
