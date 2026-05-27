@@ -178,6 +178,8 @@ process → syscall → LSM check → VFS → success
 
 ## 🔴 SunnyMapBPF — BPF Map State Poisoning
 
+[![DOI](https://zenodo.org/badge/1251274742.svg)](https://doi.org/10.5281/zenodo.20413161)
+
 A research artifact demonstrating that eBPF-based security monitors (Falco, Tracee, Tetragon) do not protect their own runtime BPF map state against same-privilege tampering.
 
 Instead of killing the agent or modifying config files, this technique writes directly to the kernel-resident BPF maps that control event generation — suppressing all telemetry silently.
